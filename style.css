@@ -1,0 +1,877 @@
+/* Universla Styling */
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  --webkit-font-smoothig: antialiased;
+  list-style: none;
+}
+/* root css for color*/
+:root {
+  --background: #ea5459;
+  --item-color: #0096c7;
+}
+/* root css for font family */
+@font-face {
+  font-family: Monterest;
+  src: url(./fonts/Montserrat-Italic-VariableFont_wght.ttf);
+}
+/* body css */
+html{
+  scroll-behavior: smooth;
+}
+body {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+}
+
+p {
+  line-height: 0.5rem;
+  text-align: center;
+}
+h1 {
+  font-size: 36pt;
+  line-height: 1.25em;
+}
+h2 {
+  font-size: 24pt;
+  line-height: 1.25em;
+}
+h3 {
+  font-size: 18pt;
+  line-height: 1.25em;
+}
+a{
+  font-family: Monterest;
+  font-size: 1rem;
+  color: whitesmoke;
+  font-weight: bold;
+  transition: 0.1s linear;
+}
+a:hover{
+  transform: translateY(4px);
+}
+.shadow{
+  text-shadow: 4px 4px 1px rgba(154,28,28,0.6);
+}
+button{
+  padding: 6px 8px;
+  border-radius: 10px;
+  border: none;
+  color: #ea5459;
+  font-size: 16px;
+  letter-spacing: 0.5px;
+-webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.25);
+  cursor: pointer;
+}
+.nav {
+  width: 95%;
+  margin: 0 auto;
+  border-radius: 2rem;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  align-items: center;
+}
+.Flexul {
+  column-gap: 77px;
+  display: inline-flex;
+}
+span.logod {
+  font-weight: 900;
+  font-family: fantasy;
+}
+#logo {
+  font-size: 1.5rem;
+  color: whitesmoke;
+}
+
+/* home sectionn css */
+
+/* images css */
+
+.firstimg {
+  position: absolute;
+  top: 19%;
+  right: 0%;
+  height: 90%;
+  width: 46%;
+}
+i#move{
+  position: absolute;
+  top: 50%;
+  left: 65%;
+  font-size: 3.8rem;
+}
+
+i.fas.fa-cog {
+  font-size:2.5rem;
+  color: white;
+  animation: rotate-center 4s linear infinite both;
+  position:absolute;
+  top: 60%;
+  left: 63%;
+  color: darkslategray;
+}
+i.fas.fa-globe {
+  font-size: 2rem;
+  color: white;
+  position: absolute;
+  left: 94.5%;
+  top: 74%;
+  -webkit-animation: bounce-top 3s linear infinite alternate both;
+  animation: bounce-top 3s linear infinite alternate both;
+}
+.fa-react {
+  font-size: 3rem;
+  animation: rotate 4s linear infinite both;
+  position:absolute;
+  top: 36%;
+  left: 91%;
+  color: deepskyblue;
+}
+@-webkit-keyframes rotate-center {
+  0% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes rotate {
+  0% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes bounce-top {
+  0% {
+    -webkit-transform: translateY(-45px);
+            transform: translateY(-45px);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+    opacity: 1;
+  }
+  40% {
+    -webkit-transform: translateY(-24px);
+            transform: translateY(-24px);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  65% {
+    -webkit-transform: translateY(-12px);
+            transform: translateY(-12px);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  82% {
+    -webkit-transform: translateY(-6px);
+            transform: translateY(-6px);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  93% {
+    -webkit-transform: translateY(-4px);
+            transform: translateY(-4px);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  25%,
+  55%,
+  75%,
+  87% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+  100% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+    opacity: 1;
+  }
+}
+header {
+  background-color: #ea5459;
+}
+.headingtext{
+  color: white;
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 3rem;
+  text-shadow: 4px 4px 1px rgba(154,28,28,0.6);
+}
+.contentwriting{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 2rem;
+}
+.imageicons{
+  flex: 1;
+  width: auto;
+  height: 92vh;
+}
+.flex{
+  display: flex;
+}
+.join{
+  width: 14%;
+  -webkit-animation: shake-bottom 1.5s cubic-bezier(0.455, 0.030, 0.515, 0.955) 4s 4 both;
+}
+.ptext{
+  color: beige;
+  word-spacing: 4px;
+}
+.ptext span{
+  color: #16bfe9;
+}
+.media-icons{
+  text-align: center;
+}
+.micon{
+  margin-right: 1rem;
+  font-size: 1.5rem;
+}
+.fa-user-graduate{
+  color: white;
+  letter-spacing: 1px;
+  word-spacing: 4px;
+}
+@keyframes shake-bottom {
+  0%,
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    -webkit-transform-origin: 50% 100%;
+            transform-origin: 50% 100%;
+  }
+  10% {
+    -webkit-transform: rotate(2deg);
+            transform: rotate(2deg);
+  }
+  20%,
+  40%,
+  60% {
+    -webkit-transform: rotate(-4deg);
+            transform: rotate(-4deg);
+  }
+  30%,
+  50%,
+  70% {
+    -webkit-transform: rotate(4deg);
+            transform: rotate(4deg);
+  }
+  80% {
+    -webkit-transform: rotate(-2deg);
+            transform: rotate(-2deg);
+  }
+  90% {
+    -webkit-transform: rotate(2deg);
+            transform: rotate(2deg);
+  }
+}
+
+/* Login form css */
+
+.login-form{
+  width: 35rem;
+  background-color: #fff;
+  margin: 0 2rem;
+  padding: 1rem 3rem;
+  border-radius: .5rem;
+  box-shadow: 0 .1rem .3rem #333;
+  position: relative;
+}
+.login-form{
+  height: 100%;
+  width: 95%;
+  position: fixed;
+  top: -200%;
+  left: 0;
+  z-index: 1000;
+  background-color: rgba(0, 0,0,.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.login-form form{
+  width: 30rem;
+  background-color: var(--background);
+  margin: 0 2rem;
+  border-radius: .5rem;
+  padding: 1rem 3rem;
+  box-shadow: 0 .1rem .3rem #333;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+form h3{
+  text-align: center;
+  color:white;
+  margin-top: 2rem;
+
+}
+.login-form form .box{
+  width: 95%;
+  padding: .3rem 0;
+  margin: 1rem 0;
+  border: none;
+  border-bottom: .2rem solid #fff;
+  font-size: 1.3rem;
+  color: #fff;
+  text-transform: none;
+  background-color: #ea5459;
+  outline: none;
+}
+.login-form form .box::placeholder{
+  text-transform: capitalize;
+  color: #fff;
+  position: relative;
+}
+.login-form form .box:focus{
+  border-color: #87b3c2;
+}
+.login-form form .box:nth-child(3){
+  margin-bottom: 3rem;
+}
+form p{
+  margin-bottom: 1.5rem;
+  color:#fff;
+}
+.pop{
+  top: 0;
+}
+.btn{
+  padding: 0.5rem 1.5rem;
+  font-size: 1rem;
+  color: var(--background);
+  background-color: #fff;
+  border-radius: 2.5rem;
+  cursor: pointer;
+  border: none;
+  box-shadow: 0 .1rem .3rem #333;
+  margin-bottom: 1rem;
+}
+.fas.fa-times{
+  position: absolute;
+  top: 16px;
+  right: 30px;
+  font-size: 1.5rem;
+  color: white;
+}
+
+/* .......................Css of Aboutus--------------------------- */
+#aboutus{
+  width: 100%;
+  height: 100vh;
+  background-color: var(--background);
+  display: flex;
+  flex-direction: row;
+  row-gap: 3rem;
+}
+.aboutimage{
+  width: 60%;
+  height: 100vh;
+  background-color:white;
+  clip-path: circle(73.9% at 15% 32%);
+}
+.images{
+  width: 100%;
+}
+.images img{
+  width: 82%;
+}
+.aboutcontent{
+  width: 40%;
+  text-align: center;
+  padding: 0px 40px;
+}
+.aboutcontent h2{
+  margin: 4rem 0;
+  color: white;
+}
+.aboutcontent p{
+  text-align: center;
+  color: white;
+  line-height: 1.2rem;
+  text-align: left;
+  margin-bottom: 3rem;
+}
+
+.arrow{
+  background-color: #0096c7;
+  height: 3.5rem;
+  width: 3.5rem;
+  position: fixed;
+  right: 2rem;
+  bottom: 2rem;
+  border-radius: 35px;
+  display: none;
+  cursor: pointer;
+}
+.fas.fa-arrow-up{
+  color: white;
+  font-size: 1.7rem;
+  text-align: center;
+  position: absolute;
+  transform: translate(58%,52%);
+}
+
+/* about us new css new page */
+
+#Aboutus{
+  background-color: #ea5459;
+  height: 100vh;
+  width: 100%;
+  text-align: center;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-content:center;
+  row-gap: 2rem;
+}
+#Aboutus h1{
+  color: #fff;
+}
+.membercards{
+  width: 90%;
+  margin:  0 auto;
+  height: 80vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.members{
+  background-color: white;
+  width: 32%;
+  height: 100%;
+  border-radius: 2rem;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  row-gap: 1.5rem;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 7px 13px 6px 1px rgba(5,3,3,0.71);
+}
+.memberimg{
+  height: 25%;
+  width: 40%;
+  border-radius: 50%;
+
+}
+.memberimg img{
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  border: 2px solid #ea5459;
+}
+.membercontent{
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.4rem;
+  color: #ea5459;
+}
+.member-icon{
+  color: #ea5459;
+}
+.abtpar{
+  margin-top: 0.3rem;
+}
+.abtpar p{
+  line-height: 1rem;
+  text-align:center;
+  text-align: justify;
+  margin-top: 0.6rem;
+}
+
+/* about section ends  */
+
+
+/* !css of course section */
+#courses{
+  width: 100%;
+  height: 150vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container{
+  width: 90%;
+  margin: 0 auto;
+  height: 85%;
+  background-color: #ea5459;
+  border-radius: 4rem;
+  overflow: hidden;
+
+}
+
+.headingcourse{
+  text-align: center;
+  color: white;
+  position: relative;
+  margin-top: 0.5rem;
+
+}
+.headingcourse:after{
+  content: "";
+  width: 21%;
+  height: 3px;
+  background-color: white;
+  position: absolute;
+  top:78%;
+  left:40%;
+  color: white;
+  margin-top: 0.5rem;
+}
+.items{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  row-gap: 2rem;
+  margin-top: 3rem;
+}
+.item{
+  width: 28%;
+  height: 50vh;
+  background-color: white;
+  border-radius: 1rem;
+  box-shadow: 14px 10px 5px -1px rgba(0,0,0,0.47);
+  position: relative;
+  transition: 0.3s linear;
+}
+.item:hover{
+  transform: translateY(-4px);
+}
+.item img{
+  width: 100%;
+  height: 70%;
+  overflow: hidden;
+  border-radius: 1rem 1rem 0rem 0rem;
+}
+.headingc{
+  text-align: center;
+  color: #ea5459;
+  margin: 0.5rem 0rem;
+}
+.rating{
+  text-align: center;
+  color: #ea5459;
+}
+.offer{
+  background-color:#ea5459;
+  height: 50px;
+  width: 50px;
+  border-radius: 2rem;
+  position: relative;
+  text-align: center;
+  color: white;
+  position: absolute;
+  top: 63%;
+  left: 75%;
+  padding: 6px;
+}
+
+#item2.offer{
+  padding: 1px;
+}
+.enroll a{
+  color:#ea5459;
+  margin-right: 1rem;
+  border: 1px solid #ea5459;
+  padding: 6px 8px;
+  border-radius: 6px;
+  font-size: 0.8rem;
+}
+.enroll{
+  margin-top: 0.7rem;
+  text-align: center;
+}
+/* courses css ends */
+/* courses content begins */
+#course-cont{
+  background-color: #ea5459;
+}
+.content-courses{
+  width: 80%;
+  background-color: white;
+  margin: 0 auto;
+  padding: 2rem 2rem;
+}
+.content-courses p{
+  text-align: justify;
+  line-height: 1.5rem;
+  margin: 0.5rem 0rem;
+  font-size: 1.1rem;
+}
+.content-courses h2,h1{
+  margin: 0.4rem 0rem;
+  color: #ea5459;
+}
+.content-courses ul li{
+  list-style:disc;
+  list-style-position: inside;
+}
+
+#Enrollopt{
+  margin: 2rem 50%;
+}
+
+
+/* teacher section starts */
+#teacher{
+  width: 100%;
+  background-color: #ea5459;
+  height: 80vh;
+  text-align: center;
+  padding: 1rem 2rem;
+}
+#teacher h1{
+  border-bottom: 1px solid white;
+  color: white;
+  margin-bottom: 1rem;
+
+
+}
+
+.cards-item{
+  width: 100%;
+  display: flex;
+  flex-direction:row;
+  column-gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+
+}
+.card{
+  display: flex;
+  justify-content: center;
+}
+.card_images{
+  height: 140px;
+  width: 140px;
+  border-radius: 50%;
+  padding: 3px;
+  background-color:#ea5459;
+}
+.card_images img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid white;
+}
+.card{
+  background-color: white;
+  border-radius: 20px;
+  height: 52vh;
+  max-width: 22%;
+  position: relative;
+  border: 2px solid white;
+}
+.card::before{
+  content: "";
+  position:absolute;
+  height: 40%;
+  width: 100%;
+  background-color:#ea5459;
+  border-radius: 20px 20px 0 0 ;
+}
+.cardcontent{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 1rem;
+  padding: 30px;
+  z-index: 100;
+}
+.t-icon{
+  color: white;
+  opacity: 0.6;
+  font-size:1.2rem;
+  cursor:pointer;
+}
+.t-icon:hover{
+  opacity: 1;
+}
+.teacher_media{
+  position: absolute;
+  top: 15px;
+  right: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 1rem;
+}
+.name-profession{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 0.5rem;
+  color: #ea5459;
+}
+.teacher_name{
+  font-size: 1.5rem;
+  font-weight: bolder;
+
+}
+.profession{
+  font-size: 1rem;
+  font-weight: 600;
+}
+.abtme{
+  background-color: #ea5459;
+  color: #fff;
+  margin-right: 1rem;
+}
+.Hireme{
+  background-color: #ea5459;
+  color: #fff;
+}
+/* teacher css ends */
+
+/* contactus page starts */
+
+#contactus{
+  height: 76vh;
+  width: 100%;
+  background-color: #fff;
+  overflow: hidden;
+}
+#contactheading{
+  text-align: center;
+  color: #ea5459;
+  margin-top: 1.5rem;
+  position: relative;
+}
+#contactheading::after{
+  content: "";
+  width: 12%;
+  height: 3px;
+  background-color:#ea5459;
+  position: absolute;
+  top: 64%;
+  left: 44%;
+  color: white;
+  margin-top: 0.5rem;
+}
+
+.contactcontent{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: 60vh;
+  width: 100%;
+  margin-top: 1rem;
+  column-gap: 2rem;
+}
+.contactform{
+  flex: 1;
+  height: 100%;
+  padding: 2rem;
+  overflow: hidden;
+}
+.maplocation{
+  flex: 2;
+  height: 100%;
+}
+iframe{
+  height: 100%;
+  width: 100%;
+}
+.contactform form{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  row-gap: 0.8rem;
+}
+.contactform form label{
+  color: #ea5459;
+  font-size:1.5rem;
+}
+.contactform form input{
+  width: 50%;
+  padding: 0.5rem;
+  outline: none;
+  border: none;
+  border: 1px solid #ea5459;
+  width: 100%;
+}
+.contactbtn{
+  display: flex;
+}
+#contactsubmit{
+  width: 30%;
+  background-color: #ea5459;
+  color: white;
+}
+/* Footer css starts */
+.footer{
+  height: 40vh;
+  background-color: #ea5459;
+  padding: 30px 30px;
+}
+.footer_content{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: white;
+  text-align: center;
+}
+.footer_content h3{
+  font-size: 26pt;
+  line-height: 1.25rem;
+}
+
+.pages{
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.5rem;
+  margin-top: 2rem;
+}
+.location_cont{
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+  margin-top: 2rem;
+}
+.copyright{
+  height: 4vh;
+  background-color: white;
+  text-align: center;
+  color: #ea5459;
+  padding: 6px;
+}
+.content1{
+  flex: 1;
+}
+.content1 p{
+  margin-top: 2rem;
+  line-height: 1.2rem;
+  text-align:left;
+}
+.content2{
+  flex: 1;
+}
+.content3{
+  flex: 1;
+}
